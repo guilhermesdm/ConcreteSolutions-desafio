@@ -63,7 +63,7 @@ export default function Github() {
                             <div className="repositories"> 
                                 <li className="repository" key={repo.id} onClick={() => Swal.fire({
                                     title: `${repo.name}`,
-                                    html: `Description: ${repo.description} <br> Stars: ${repo.stargazers_count} <br> Languages: ${repo.language} <br> Link: <a href="${repo.html_url}">a</a>`,
+                                    html: `Description: ${repo.description} <br> Stars: ${repo.stargazers_count} <br> Languages: ${repo.language} <br> Link: <a href="${repo.html_url}">Repository</a>`,
                                     toast: true,
                                 })}>
                                     {repo.name} - ⭐ {repo.stargazers_count}
