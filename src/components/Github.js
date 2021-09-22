@@ -47,8 +47,8 @@ export default function Github() {
                 <button onClick={handleSubmit} className="buttonSearch">Search</button>
             </div>
             
-            {error ? (<h1>{error}</h1>) : (
-            <div className="card"> 
+            {error ? (<h1 className="error">{error}</h1>) : (
+            <div className="card" show={this.state.card}> 
                 <div className="user">
                     <img className="avatar" src={ `${data?.avatar_url}` } alt=""></img>
                     <p>User: {data?.login}</p>
